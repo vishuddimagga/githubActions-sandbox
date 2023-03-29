@@ -1,0 +1,8 @@
+name: This is the name
+run-name: This is the run-name
+on: [push]
+jobs:
+  JOB1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "step ONE"
