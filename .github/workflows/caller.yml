@@ -4,6 +4,8 @@ on: [push]
 jobs:
   run-caller:
     uses: ./.github/workflows/one-to-choose.yml
+    with:
+      test: 'testString'
 
   actual:
     needs: run-caller
