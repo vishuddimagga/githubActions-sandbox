@@ -1,14 +1,14 @@
 name: This is the name
 run-name: This is the run-name
 on: [fork, workflow_call]
-inputs:
-  test:
-    required: false
-    type: string
+# inputs:
+#   test:
+#     required: false
+#     type: string
 jobs:
   JOB1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Print string
-        run: echo "${{ inputs.test }}"
+      # - name: Print string
+      #   run: echo "${{ inputs.test }}"
