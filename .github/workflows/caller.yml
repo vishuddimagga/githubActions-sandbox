@@ -3,7 +3,7 @@ run-name: Caller
 on: [push]
 jobs:
   run-caller:
-  uses: ./.github/workflows/one-to-choose.yml
+    uses: ./.github/workflows/one-to-choose.yml
 
   actual:
     needs: run-caller
