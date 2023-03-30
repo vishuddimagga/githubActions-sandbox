@@ -2,12 +2,14 @@ name: GitHub Actions Reuse workflows
 run-name: Caller
 on: [push]
 jobs:
-  Call-one:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - name: Run one-to-choose
-        uses: ./.github/workflows/one-to-choose.yml
+  rub-caller:
+  uses: ./.github/workflows/one-to-choose.yml
+  # Call-one:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check out repository code
+  #       uses: actions/checkout@v3
+  #     - name: Run one-to-choose
+  #       uses: ./.github/workflows/one-to-choose.yml
         # with:
         #   test: 'testString'
