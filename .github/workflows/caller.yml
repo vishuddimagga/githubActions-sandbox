@@ -2,8 +2,14 @@ name: GitHub Actions Reuse workflows
 run-name: Caller
 on: [push]
 jobs:
-  rub-caller:
+  run-caller:
   uses: ./.github/workflows/one-to-choose.yml
+
+  actual:
+    needs: run-caller
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
   # Call-one:
   #   runs-on: ubuntu-latest
   #   steps:
