@@ -5,7 +5,7 @@ jobs:
   run-caller:
     uses: ./.github/workflows/one-to-choose.yml
     with:
-      test: 'testString'
+      test-test: 'testString'
 
   actual:
     needs: run-caller

@@ -2,7 +2,7 @@ name: This is the name
 run-name: This is the run-name
 on: [fork, workflow_call]
 inputs:
-  test:
+  test-test:
     required: false
     type: string
 jobs:
