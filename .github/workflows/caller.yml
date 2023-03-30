@@ -1,0 +1,10 @@
+name: GitHub Actions Reuse workflows
+run-name: Caller
+on: [push]
+jobs:
+  Call-one:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/one-to-choose.yml
+        with:
+          test: 'testString'
