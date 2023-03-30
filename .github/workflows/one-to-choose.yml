@@ -1,6 +1,6 @@
 name: This is the name
 run-name: This is the run-name
-on: [fork, workflow_cal]
+on: [fork, workflow_call]
 inputs:
   test:
     required: false
